@@ -6,7 +6,7 @@ import cv2
 
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
-
+from .models import Camera
 import numpy as np
 
 
@@ -32,6 +32,24 @@ def predict(request):
 
 def camera_feed(request):
     return render(request, 'dashboard/camera.html')
+
+
+
+def addCamera(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        feed_links = request.POST.get('feed_links')
+        desc = request.POST.get('desc')
+
+        # Create and save the new camera object
+        Camera.objects.create(
+            name=name,
+            feed_links=feed_links,
+            desc=desc,
+        )
+
+        return HttpResponse('Camera added successfully')
+    return render(request, 'dashboard/addCamera.html')
 
 
 
