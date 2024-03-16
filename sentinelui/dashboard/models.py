@@ -10,3 +10,4 @@ class Camera(models.Model):
     desc = models.TextField()
 
 # Create your models here.
+

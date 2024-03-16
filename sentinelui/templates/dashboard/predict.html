@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock title %}
+{% block content %}
+
+<!-- Horizontal scrolling card stack with background -->
+<form action="#" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="image" accept="image/*">
+    <input type="submit" value="Upload Image">
+</form>
+
+
+{% endblock content %}
