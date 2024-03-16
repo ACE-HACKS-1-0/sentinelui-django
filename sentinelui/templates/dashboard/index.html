@@ -16,45 +16,19 @@
                 <div class="flowbite-scrollable-inner">
                     <div class="flex flex-row gap-4">
                         <!-- Loop over products -->         
+  
+
+                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 flex flex-row margin-auto">
+
+                       {% for prod in  products %}
                         <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 flex flex-row margin-auto">
                             <img class="rounded-lg"src="" />
                             <div class="p-5">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 1</h5>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Card 1 Description</p>
-                                <a href='{% url "camera_feed" %}' class="dark:text-white">Read more</a>
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{prod.name}}</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{prod.desc}}</p>
+                                <a href='{% url "camera_feed" prod.id %}' class="dark:text-white">Read more</a>
                             </div>
-                        </div>    
-                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 flex flex-row margin-auto">
-                            <img class="rounded-lg"src="" />
-                            <div class="p-5">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 1</h5>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Card 1 Description</p>
-                                <a href='{% url "camera_feed" %}' class="dark:text-white">Read more</a>
-                            </div>
-                        </div> 
-                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 flex flex-row margin-auto">
-                            <img class="rounded-lg"src="" />
-                            <div class="p-5">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 1</h5>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Card 1 Description</p>
-                                <a href='{% url "camera_feed" %}' class="dark:text-white">Read more</a>
-                            </div>
-                        </div> 
-                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 flex flex-row margin-auto">
-                            <img class="rounded-lg"src="" />
-                            <div class="p-5">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 1</h5>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Card 1 Description</p>
-                                <a href='{% url "camera_feed" %}' class="dark:text-white">Read more</a>
-                            </div>
-                        </div> 
-                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 flex flex-row margin-auto">
-                            <img class="rounded-lg"src="" />
-                            <div class="p-5">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 1</h5>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Card 1 Description</p>
-                                <a href='{% url "camera_feed" %}' class="dark:text-white">Read more</a>
-                            </div>
+                            {% endfor %}
                         </div> 
                     </div>
                 </div>

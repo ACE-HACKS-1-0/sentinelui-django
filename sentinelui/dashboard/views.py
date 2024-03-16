@@ -30,8 +30,15 @@ def predict(request):
 
 
 
-def camera_feed(request):
-    return render(request, 'dashboard/camera.html')
+def camera_feed(request, pk):
+    cam = Camera.objects.get(id=pk)
+
+
+    context = {
+        'cam': cam,
+    }
+
+    return render(request, 'dashboard/camera.html', context)
 
 
 
@@ -54,4 +61,7 @@ def addCamera(request):
 
 
 def index(request):
-    return render(request, 'dashboard/index.html')
+    product = Camera.objects.all()
+    
+    context={'products': product}
+    return render(request, 'dashboard/index.html', context)
