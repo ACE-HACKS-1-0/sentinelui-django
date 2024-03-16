@@ -1,7 +1,5 @@
-import os
 from django.shortcuts import render
-from django.http import StreamingHttpResponse, HttpResponse
-from tensorflow import keras
+from django.http import StreamingHttpResponse
 import cv2
 
 from tensorflow.keras.preprocessing import image
