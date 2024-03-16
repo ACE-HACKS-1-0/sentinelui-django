@@ -4,84 +4,188 @@
 {% block content %}
 
 <!-- Horizontal scrolling card stack with background -->
-<div class="flowbite-stack overflow-x-auto mt-6 bg-gray-100 rounded-lg shadow-md dark:bg-gray-800 p-4 items-stretch my-4 grid-span-2">
-    <div class="flowbite-scrollable-container">
-        <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Your Products</h1>
-        <div class="flowbite-scrollable">
-            <div class="flowbite-scrollable-inner">
-                <div class="flex gap-4">
-                    <!-- Loop over products -->
-                    <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2">
-                        <img class="rounded-lg"src="" />
-                        <div class="p-5">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 1</h5>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Card 1 Description</p>
-                            <a href='{% url "camera_feed" %}' class="dark:text-white">Read more</a>
-                        </div>
-                    </div> 
-                    <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2">
-                        <img class="rounded-lg"src="" />
-                        <div class="p-5">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 1</h5>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Card 1 Description</p>
-                            <a href='{% url "camera_feed" %}' class="dark:text-white">Read more</a>
-                        </div>
-                    </div>                                  
+<div class="bg-gray-100 rounded-lg shadow-md dark:bg-gray-800 items-center w-max-75vw p-4">
+    <h1 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white m-auto">Your Products</h1>
+    <div class="flowbite-stack overflow-x-auto no-scrollbar" >
+        <div class="flowbite-scrollable-container">
+            <div class="flowbite-scrollable mt-6">
+                <div class="flowbite-scrollable-inner">
+                    <div class="flex flex-row gap-4">
+                        <!-- Loop over products -->         
+                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 flex flex-row margin-auto">
+                            <img class="rounded-lg"src="" />
+                            <div class="p-5">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 1</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Card 1 Description</p>
+                                <a href='{% url "camera_feed" %}' class="dark:text-white">Read more</a>
+                            </div>
+                        </div>    
+                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 flex flex-row margin-auto">
+                            <img class="rounded-lg"src="" />
+                            <div class="p-5">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 1</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Card 1 Description</p>
+                                <a href='{% url "camera_feed" %}' class="dark:text-white">Read more</a>
+                            </div>
+                        </div> 
+                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 flex flex-row margin-auto">
+                            <img class="rounded-lg"src="" />
+                            <div class="p-5">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 1</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Card 1 Description</p>
+                                <a href='{% url "camera_feed" %}' class="dark:text-white">Read more</a>
+                            </div>
+                        </div> 
+                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 flex flex-row margin-auto">
+                            <img class="rounded-lg"src="" />
+                            <div class="p-5">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 1</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Card 1 Description</p>
+                                <a href='{% url "camera_feed" %}' class="dark:text-white">Read more</a>
+                            </div>
+                        </div> 
+                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 flex flex-row margin-auto">
+                            <img class="rounded-lg"src="" />
+                            <div class="p-5">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 1</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Card 1 Description</p>
+                                <a href='{% url "camera_feed" %}' class="dark:text-white">Read more</a>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="flowbite-stack overflow-x-auto mt-6 bg-gray-100 rounded-lg shadow-md dark:bg-gray-800 p-4 items-center my-4">
-    <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alerts</h1>
-    <div class="flex flex-col gap-4">
-        <!-- Loop over alert -->         
-        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 items-center text-left">
-            <div class="p-1">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
+
+<div class="grid grid-cols-2 gap-4 items-center">
+    <div class="flowbite-stack overflow-x-auto bg-gray-100 rounded-lg shadow-md dark:bg-gray-800 p-4 items-center col-span-1">
+        <h1 class=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert</h1>
+        <div class="flex flex-col mt-6 gap-4">
+            <!-- Loop over alert -->         
+            <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-900 p-2 items-center text-left">
+                <div class="p-1">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
+                </div>
+            </div>                                      
+            <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-900 p-2 items-center text-left">
+                <div class="p-1">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="flowbite-stack overflow-x-auto bg-gray-100 rounded-lg shadow-md dark:bg-gray-800 p-4 items-center col-span-1">
+        <h1 class=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert</h1>
+        <div class="flex flex-col mt-6 gap-4">
+            <!-- Loop over alert -->         
+            <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-900 p-2 items-center text-left">
+                <div class="p-1">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
+                </div>
+            </div>                                      
+            <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-900 p-2 items-center text-left">
+                <div class="p-1">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="flowbite-stack bg-gray-100 rounded-lg shadow-md dark:bg-gray-800 p-6 items-center col-span-2 ">
+        <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white ">Alert History</h1>
+        <div class="flowbite-stack overflow-y-auto no-scrollbar" >
+            <div class="flowbite-scrollable-container">
+                <div class="flowbite-scrollable mt-6">
+                    <div class="flowbite-scrollable-inner flex flex-col mt-6 gap-4 " style="max-height: 50vh;">
+                        <!-- Loop over alert -->         
+                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 items-center text-left">
+                            <div class="p-1">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
+                            </div>
+                        </div>                                      
+                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 items-center text-left">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
+                        </div> 
+                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 items-center text-left">
+                            <div class="p-1">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
+                            </div>
+                        </div>    
+                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 items-center text-left">
+                            <div class="p-1">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
+                            </div>
+                        </div>   
+                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 items-center text-left">
+                            <div class="p-1">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
+                            </div>
+                        </div>   
+                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 items-center text-left">
+                            <div class="p-1">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
+                            </div>
+                        </div>   
+                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 items-center text-left">
+                            <div class="p-1">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
+                            </div>
+                        </div>   
+                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 items-center text-left">
+                            <div class="p-1">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
+                            </div>
+                        </div>  
+                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 items-center text-left">
+                            <div class="p-1">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
+                            </div>
+                        </div>   
+                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 items-center text-left">
+                            <div class="p-1">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
+                            </div>
+                        </div>  
+                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 items-center text-left">
+                            <div class="p-1">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
+                            </div>
+                        </div>   
+                        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 items-center text-left">
+                            <div class="p-1">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
+                            </div>
+                        </div>      
+                    </div>
+                </div>
             </div>
-        </div>                                      
-        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 items-center text-left">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
-        </div>     
+        </div>
+            
+        
     </div>
 </div>
 
-<div class="flowbite-stack overflow-x-auto mt-6 bg-gray-100 rounded-lg shadow-md dark:bg-gray-800 p-4 items-center my-4">
-    <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alerts</h1>
-    <div class="flex flex-col gap-4">
-        <!-- Loop over alert -->         
-        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 items-center text-left">
-            <div class="p-1">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
-            </div>
-        </div>                                      
-        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 items-center text-left">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
-        </div>     
-    </div>
-</div>
 
-<div class="flowbite-stack overflow-x-auto mt-6 bg-gray-100 rounded-lg shadow-md dark:bg-gray-800 p-4 items-center my-4">
-    <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alerts</h1>
-    <div class="flex flex-col gap-4">
-        <!-- Loop over alert -->         
-        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 items-center text-left">
-            <div class="p-1">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
-            </div>
-        </div>                                      
-        <div class="card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 p-2 items-center text-left">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alert #1</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Severity</p>
-        </div>     
-    </div>
-</div>
+
 
 {% endblock content %}
