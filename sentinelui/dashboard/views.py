@@ -53,6 +53,7 @@ def addCamera(request):
             name=name,
             feed_links=feed_links,
             desc=desc,
+            user = request.user,
         )
 
         return HttpResponse('Camera added successfully')
